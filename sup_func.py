@@ -25,6 +25,49 @@ def get_cat_popu(list_populations):
             dic_poblac[population] = 6
     return dic_poblac
 
+def edit_df(df, resp):
+
+    if resp == 'TotalCases':
+        df = df.drop(['TotalDeaths','TotalRecovered'],axis=1)
+    elif resp == 'TotalDeaths':
+        df.drop(['TotalCases','TotalRecovered'],axis=1, inplace=True)
+    elif resp == 'TotalRecovered':
+        df.drop(['TotalCases','TotalDeaths'],axis=1, inplace=True)
+    else:
+        print('error, no right input')
+    df = df.dropna(subset=[resp], axis=0)
+    df['Migrants (net)'].fillna(0, inplace=True)
+    df['TotalTests'].fillna(0, inplace=True)
+    df['Med. Age'].fillna((df['Med. Age'].mean()), inplace=True)
+    df['Urban Pop %'].fillna((df['Urban Pop %'].mean()), inplace=True)
+    y= df[resp]
+    df = df.drop([resp], axis=1)
+    X = df
+
+    return X, y
+
+def get_stat_data(X,y):
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .30, random_state=42)
+
+    lm_model = LinearRegression(normalize=True) # Instantiate
+    lm_model.fit(X_train, y_train) #Fit
+
+    y_test_preds = lm_model.predict(X_test)
+    y_train_preds = lm_model.predict(X_train)
+
+#Rsquared and y_test
+    rsquared_score = r2_score(y_test, y_test_preds)
+    length_y_test = len(y_test)
+    length_y_train = len(y_train)
+    test_score= r2_score(y_test, y_test_preds)
+    train_score = r2_score(y_train, y_train_preds)
+    return test_score, train_score, y_test, y_train
+
+
+
+#Use the function to create X and y
+
+
 def find_optimal_lm_mod(X, y, cutoffs, test_size = .30, random_state=42, plot=True):
     '''
     INPUT
