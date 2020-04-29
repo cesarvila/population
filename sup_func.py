@@ -55,6 +55,19 @@ def edit_df(df, resp):
 
     return X, y
 
+def age_rank(x):
+    if x>45:
+        s= '>45'
+    elif x>40:
+        s='40-45'
+    elif x>35:
+        s='35-40'
+    elif x>30:
+        s='30-35'
+    else:
+        s="<=30"
+    return s
+
 def get_stat_data(X,y):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .30, random_state=42)
 
