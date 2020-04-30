@@ -9,7 +9,9 @@ Covid Population project
 
 Description
 
-This project will give you many information about COVID figures
+This project will give you many information about COVID figures.
+See the below post:
+https://medium.com/@cesarvila/the-information-behind-covid-19-data-e8737d1d8252
 
 Files used
 
@@ -24,8 +26,10 @@ The supporting scripts are:
 
 Credits
 
+Udacity
 https://www.worldometers.info/coronavirus/
 https://worldpopulationreview.com/countries/countries-with-universal-healthcare/
 "World Countries". Downloaded from http://tapiquen-sig.jimdo.com. 
 Carlos Efraín Porto Tapiquén. Orogénesis Soluciones Geográficas. Porlamar, Venezuela 2015.
 Based on shapes from Enviromental Systems Research Institute (ESRI). Free Distribuition.
+
