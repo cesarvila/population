@@ -12,7 +12,7 @@ Description
 This project will give you many information about COVID figures.
 See the post below:
 
-https://medium.com/@cesarvila/the-information-behind-covid-19-data-e8737d1d8252
+https://link.medium.com/P42VrDcI65
 
 Files used
 
@@ -28,6 +28,7 @@ The supporting scripts are:
 Credits
 
 Udacity
+Medium
 https://www.worldometers.info/coronavirus/
 https://worldpopulationreview.com/countries/countries-with-universal-healthcare/
 "World Countries". Downloaded from http://tapiquen-sig.jimdo.com. 
