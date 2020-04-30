@@ -2,12 +2,15 @@
 Date created
 
 29 Apr 2020 by César Vila
-Project Title
+
+Project Title:
 
 Covid Population project
+
 Description
 
 This project will give you many information about COVID figures
+
 Files used
 
 The used files are: covid.ipynb as main script
