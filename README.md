@@ -11,12 +11,13 @@ This project will give you many information about COVID figures
 Files used
 
 The used files are: covid.ipynb as main script
+
 The supporting scripts are: 
-sup_func.py supporting main script
-geograph_code.py to plot in geograph (not used finally)
-geocode.py To plot in geopandas
-World Countries files (SHP) 
-Pics created folder for the charts created
+
+1. sup_func.py supporting main script
+2. geograph_code.py to plot in geograph (not used finally)
+3. World Countries files (SHP) 
+4. Pics created folder for the charts created
 
 Credits
 
