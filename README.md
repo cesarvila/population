@@ -10,7 +10,8 @@ Covid Population project
 Description
 
 This project will give you many information about COVID figures.
-See the below post:
+See the post below:
+
 https://medium.com/@cesarvila/the-information-behind-covid-19-data-e8737d1d8252
 
 Files used
