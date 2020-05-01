@@ -159,7 +159,7 @@ def read_shapefile(sf):
     df = df.assign(coords=shps)
     return df
 
-def coef_weights(coefficients, X_train):
+def coef_weights(coefficients, X):
     '''
     INPUT:
     coefficients - the coefficients of the linear model
@@ -172,7 +172,7 @@ def coef_weights(coefficients, X_train):
     variable attached to the coefficient.
     '''
     coefs_df = pd.DataFrame()
-    coefs_df['est_int'] = X_train.columns
+    coefs_df['est_int'] = X.columns
     coefs_df['coefs'] = coefficients
     coefs_df['abs_coefs'] = np.abs(coefficients)
     coefs_df = coefs_df.sort_values('abs_coefs', ascending=False)
