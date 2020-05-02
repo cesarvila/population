@@ -1,31 +1,28 @@
-# population
-Date created
+# Covid Population project
+### Date created
 
 29 Apr 2020 by César Vila
 
-Project Title:
+### Project Title:
 
-Covid Population project
+#### Covid Population project
 
-Description
+### Description
 
-This project will give you many information about COVID figures.
+This project will give you many information about **COVID figures**.
 See the post below:
 
 https://link.medium.com/P42VrDcI65
 
-Files used
+### Files used
 
-The used files are: covid.ipynb as main script
+The used files are: **covid.ipynb** as main script
 
 The supporting scripts are: 
+1. World Countries files (SHP) 
+2. Pics created folder for the charts created
 
-1. sup_func.py supporting main script
-2. geograph_code.py to plot in geograph (not used finally)
-3. World Countries files (SHP) 
-4. Pics created folder for the charts created
-
-Credits
+### Credits
 
 Udacity
 Medium
