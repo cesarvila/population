@@ -44,8 +44,8 @@ The supporting scripts are:
 
 ### Libraries used:
  - **numpy** and **pandas** to *create dataframes* and work with them
- - **requests** and from **bs4**, **BeautifulSoup** for *downloading data* from *worldometers* url
- - **matplotlib.pyplot** and **shapefile** for *plotting* great charts
+ - **requests** and, from **bs4**, **BeautifulSoup** for *downloading data* from *worldometers* url
+ - **matplotlib.pyplot**, **shapefile**, **seaborn** and **geopandas** for *plotting* great charts
  - **sklearn** for the *model* 
 
 ### Credits
